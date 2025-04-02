@@ -30,40 +30,133 @@
         {
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.btnmostrar = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.txbcode = new System.Windows.Forms.TextBox();
+            this.btneliminar = new System.Windows.Forms.Button();
+            this.btnLimpiar = new System.Windows.Forms.Button();
+            this.txbAnimal = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.txbNombre = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
             // 
+            this.dataGridView1.BackgroundColor = System.Drawing.Color.MistyRose;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(103, 12);
+            this.dataGridView1.Location = new System.Drawing.Point(76, 46);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(595, 374);
+            this.dataGridView1.Size = new System.Drawing.Size(446, 304);
             this.dataGridView1.TabIndex = 0;
             // 
             // btnmostrar
             // 
-            this.btnmostrar.Location = new System.Drawing.Point(284, 408);
+            this.btnmostrar.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.btnmostrar.Location = new System.Drawing.Point(226, 367);
+            this.btnmostrar.Margin = new System.Windows.Forms.Padding(2);
             this.btnmostrar.Name = "btnmostrar";
-            this.btnmostrar.Size = new System.Drawing.Size(219, 30);
+            this.btnmostrar.Size = new System.Drawing.Size(164, 24);
             this.btnmostrar.TabIndex = 1;
             this.btnmostrar.Text = "Mostrar";
             this.btnmostrar.UseVisualStyleBackColor = true;
             this.btnmostrar.Click += new System.EventHandler(this.btnmostrar_Click);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(56, 445);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(32, 13);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "Code";
+            // 
+            // txbcode
+            // 
+            this.txbcode.Location = new System.Drawing.Point(24, 475);
+            this.txbcode.Name = "txbcode";
+            this.txbcode.Size = new System.Drawing.Size(95, 20);
+            this.txbcode.TabIndex = 3;
+            // 
+            // btneliminar
+            // 
+            this.btneliminar.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.btneliminar.Location = new System.Drawing.Point(35, 501);
+            this.btneliminar.Name = "btneliminar";
+            this.btneliminar.Size = new System.Drawing.Size(75, 33);
+            this.btneliminar.TabIndex = 4;
+            this.btneliminar.Text = "Eliminar";
+            this.btneliminar.UseVisualStyleBackColor = true;
+            this.btneliminar.Click += new System.EventHandler(this.btneliminar_Click);
+            // 
+            // btnLimpiar
+            // 
+            this.btnLimpiar.Location = new System.Drawing.Point(440, 11);
+            this.btnLimpiar.Margin = new System.Windows.Forms.Padding(2);
+            this.btnLimpiar.Name = "btnLimpiar";
+            this.btnLimpiar.Size = new System.Drawing.Size(164, 24);
+            this.btnLimpiar.TabIndex = 5;
+            this.btnLimpiar.Text = "limpiar";
+            this.btnLimpiar.UseVisualStyleBackColor = true;
+            this.btnLimpiar.Click += new System.EventHandler(this.btnLimpiar_Click);
+            // 
+            // txbAnimal
+            // 
+            this.txbAnimal.Location = new System.Drawing.Point(509, 387);
+            this.txbAnimal.Name = "txbAnimal";
+            this.txbAnimal.Size = new System.Drawing.Size(78, 20);
+            this.txbAnimal.TabIndex = 6;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(515, 367);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(38, 13);
+            this.label2.TabIndex = 7;
+            this.label2.Text = "Animal";
+            // 
+            // txbNombre
+            // 
+            this.txbNombre.Location = new System.Drawing.Point(509, 429);
+            this.txbNombre.Name = "txbNombre";
+            this.txbNombre.Size = new System.Drawing.Size(78, 20);
+            this.txbNombre.TabIndex = 8;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(515, 413);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(44, 13);
+            this.label3.TabIndex = 9;
+            this.label3.Text = "Nombre";
+            // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.BackColor = System.Drawing.Color.PapayaWhip;
+            this.ClientSize = new System.Drawing.Size(615, 572);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.txbNombre);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.txbAnimal);
+            this.Controls.Add(this.btnLimpiar);
+            this.Controls.Add(this.btneliminar);
+            this.Controls.Add(this.txbcode);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.btnmostrar);
             this.Controls.Add(this.dataGridView1);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form1";
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -71,6 +164,14 @@
 
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button btnmostrar;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox txbcode;
+        private System.Windows.Forms.Button btneliminar;
+        private System.Windows.Forms.Button btnLimpiar;
+        private System.Windows.Forms.TextBox txbAnimal;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox txbNombre;
+        private System.Windows.Forms.Label label3;
     }
 }
 
