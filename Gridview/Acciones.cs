@@ -2,12 +2,17 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
+using System.Xml.Linq;
 
 namespace Gridview
 {
     internal class Acciones
     {
+        Diagnostico a = new Diagnostico();
+
+
         List<Diagnostico> listaPacientes = new List<Diagnostico>
         {
             new Diagnostico("Gato","Bequer",1120,"Gripe comun","Medicamento","A+"),
@@ -61,5 +66,18 @@ namespace Gridview
                 return false;
             }
         }
+        public bool AgregarPaciente(string tipoAnimal, string nombre, int code, string enfermedad, string tratamiento, string tipoSangre)
+        {
+            try
+            {
+                listaPacientes.Add(new Diagnostico(a.TipoAnimal,a.Nombre,a.code,a.Enfermedad,a.Tratamiento,a.TipoSangre));
+                return true;
+            }
+            catch (Exception)
+            {
+                return false;
+            }
+        }
+
     }
 }

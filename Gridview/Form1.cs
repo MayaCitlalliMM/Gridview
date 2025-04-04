@@ -39,5 +39,23 @@ namespace Gridview
         {
             tx
         }
+
+        private void btnAgregarPaciente_Click(object sender, EventArgs e)
+        {
+            if(acc.AgregarPaciente(txbAnimal.Text, txbNombre.Text, txbCodeagregar.Text, txbEnfermedad.Text, txbTipoSangre.Text, txbTratamiento.Text))
+                MessageBox.Show("Agregado con exito");
+            else
+                MessageBox.Show("Paciente no encontrado");
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
