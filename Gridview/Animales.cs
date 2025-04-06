@@ -10,17 +10,17 @@ namespace Gridview
     {
         public Animales() { }
 
-        public Animales(string tipoAnimal, string nombre, int code)
+        public Animales(string tipoAnimal, string nombre, string identificacionAnimal)
         {
             TipoAnimal = tipoAnimal;
             Nombre = nombre;
-            this.code = code;
+            this.identificacionAnimal = identificacionAnimal;
         }
 
         public string TipoAnimal { get; set; }
         public string Nombre { get; set; }
 
-        public int code { get; set; }
+        public string identificacionAnimal { get; set; }
        
     }
 }

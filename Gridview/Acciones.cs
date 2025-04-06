@@ -15,30 +15,31 @@ namespace Gridview
 
         List<Diagnostico> listaPacientes = new List<Diagnostico>
         {
-            new Diagnostico("Gato","Bequer",1120,"Gripe comun","Medicamento","A+"),
-            new Diagnostico("Gato","Vina",1001, "Fractura","Yeso","c+"),
-            new Diagnostico("Perro","Juan",1520,"Problemas de piel","Medicamento","B-"),
-            new Diagnostico("Cotorro","Leche",1450,"Sarna","Medicamento piel","A-"),
-            new Diagnostico("Hamster","Roberto",1850,"Fractura","Yeso","O"),
+            new Diagnostico("Gato","Bequer","BEQ12","Gripe comun","Medicamento","A+"),
+            new Diagnostico("Gato","Vina","TYU4R", "Fractura","Yeso","c+"),
+            new Diagnostico("Perro","Juan","CA54E","Problemas de piel","Medicamento","B-"),
+            new Diagnostico("Cotorro","Leche","JBR5A","Sarna","Medicamento piel","A-"),
+            new Diagnostico("Hamster","Roberto","AE2F4","Fractura","Yeso","O"),
 
         };
         public List<Diagnostico> MostrarPaciente()
         {
             return listaPacientes; 
         }
-        public bool ActualizarPacientes(int Code)
+        public bool ActualizarPacientes(string tipoAnimal, string nombre, string identificacionAnimal, string enfermedad, string tratamiento, string tipoSangre)
         {
 
 
             try
             {
-                var objetliminar = listaPacientes.Find(x => x.code == Code);
-                if (objetliminar != null)
-                {
-                    listaPacientes.Remove(objetliminar);
-                    return true;
-                }
-                return false;
+                var objetliminar = listaPacientes.Find(x => x.identificacionAnimal == identificacionAnimal);
+                objetliminar.TipoAnimal = tipoAnimal;
+                objetliminar.Nombre = nombre;
+                objetliminar.identificacionAnimal = identificacionAnimal;
+                objetliminar.Enfermedad = enfermedad;
+                objetliminar.Tratamiento = tratamiento;
+                objetliminar.TipoSangre = tipoSangre;
+                return true;
             }
             catch (Exception)
             {
@@ -46,13 +47,13 @@ namespace Gridview
                 return false;
             }
         }
-        public bool EliminarPaciente(int Code )
+        public bool EliminarPaciente(string identificacionAnimal)
         {
 
 
             try
             {
-                var objetliminar = listaPacientes.Find(x => x.code == Code);
+                var objetliminar = listaPacientes.Find(x => x.identificacionAnimal == identificacionAnimal);
                 if (objetliminar != null) 
                 {
                     listaPacientes.Remove(objetliminar);
@@ -66,11 +67,12 @@ namespace Gridview
                 return false;
             }
         }
-        public bool AgregarPaciente(string tipoAnimal, string nombre, int code, string enfermedad, string tratamiento, string tipoSangre)
+      
+        public bool AgregarPaciente(string tipoAnimal, string nombre, string identificacionAnimal, string enfermedad, string tratamiento, string tipoSangre)
         {
             try
             {
-                listaPacientes.Add(new Diagnostico(a.TipoAnimal,a.Nombre,a.code,a.Enfermedad,a.Tratamiento,a.TipoSangre));
+                listaPacientes.Add(new Diagnostico(a.TipoAnimal = tipoAnimal,a.Nombre = nombre,a.identificacionAnimal = identificacionAnimal,a.Enfermedad = enfermedad,a.Tratamiento = tratamiento,a.TipoSangre = tipoSangre));
                 return true;
             }
             catch (Exception)

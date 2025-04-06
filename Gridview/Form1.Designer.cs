@@ -48,6 +48,7 @@
             this.txbTipoSangre = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.txbTratamiento = new System.Windows.Forms.TextBox();
+            this.btnActualizar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -79,11 +80,11 @@
             // 
             this.label1.AutoSize = true;
             this.label1.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.label1.Location = new System.Drawing.Point(56, 445);
+            this.label1.Location = new System.Drawing.Point(12, 459);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(32, 13);
+            this.label1.Size = new System.Drawing.Size(129, 13);
             this.label1.TabIndex = 2;
-            this.label1.Text = "Code";
+            this.label1.Text = "Identificacion de paciente";
             // 
             // txbcode
             // 
@@ -157,25 +158,26 @@
             // 
             this.label4.AutoSize = true;
             this.label4.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.label4.Location = new System.Drawing.Point(552, 156);
+            this.label4.Location = new System.Drawing.Point(549, 324);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(32, 13);
+            this.label4.Size = new System.Drawing.Size(70, 26);
             this.label4.TabIndex = 10;
-            this.label4.Text = "Code";
+            this.label4.Text = "Identificacion\r\n de paciente";
             // 
             // txbCodeagregar
             // 
             this.txbCodeagregar.BackColor = System.Drawing.Color.MistyRose;
-            this.txbCodeagregar.Location = new System.Drawing.Point(547, 172);
+            this.txbCodeagregar.Location = new System.Drawing.Point(546, 365);
             this.txbCodeagregar.Name = "txbCodeagregar";
             this.txbCodeagregar.Size = new System.Drawing.Size(78, 20);
             this.txbCodeagregar.TabIndex = 11;
+            this.txbCodeagregar.TextChanged += new System.EventHandler(this.txbCodeagregar_TextChanged);
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.label5.Location = new System.Drawing.Point(546, 208);
+            this.label5.Location = new System.Drawing.Point(552, 160);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(64, 13);
             this.label5.TabIndex = 12;
@@ -185,7 +187,7 @@
             // txbEnfermedad
             // 
             this.txbEnfermedad.BackColor = System.Drawing.Color.MistyRose;
-            this.txbEnfermedad.Location = new System.Drawing.Point(547, 224);
+            this.txbEnfermedad.Location = new System.Drawing.Point(546, 176);
             this.txbEnfermedad.Name = "txbEnfermedad";
             this.txbEnfermedad.Size = new System.Drawing.Size(78, 20);
             this.txbEnfermedad.TabIndex = 13;
@@ -193,7 +195,7 @@
             // btnAgregarPaciente
             // 
             this.btnAgregarPaciente.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.btnAgregarPaciente.Location = new System.Drawing.Point(549, 379);
+            this.btnAgregarPaciente.Location = new System.Drawing.Point(460, 391);
             this.btnAgregarPaciente.Name = "btnAgregarPaciente";
             this.btnAgregarPaciente.Size = new System.Drawing.Size(75, 33);
             this.btnAgregarPaciente.TabIndex = 14;
@@ -214,7 +216,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.label7.Location = new System.Drawing.Point(544, 256);
+            this.label7.Location = new System.Drawing.Point(545, 208);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(80, 13);
             this.label7.TabIndex = 17;
@@ -223,7 +225,7 @@
             // txbTipoSangre
             // 
             this.txbTipoSangre.BackColor = System.Drawing.Color.MistyRose;
-            this.txbTipoSangre.Location = new System.Drawing.Point(546, 285);
+            this.txbTipoSangre.Location = new System.Drawing.Point(546, 233);
             this.txbTipoSangre.Name = "txbTipoSangre";
             this.txbTipoSangre.Size = new System.Drawing.Size(78, 20);
             this.txbTipoSangre.TabIndex = 18;
@@ -232,7 +234,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.label8.Location = new System.Drawing.Point(547, 321);
+            this.label8.Location = new System.Drawing.Point(555, 265);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(63, 13);
             this.label8.TabIndex = 19;
@@ -241,10 +243,21 @@
             // txbTratamiento
             // 
             this.txbTratamiento.BackColor = System.Drawing.Color.MistyRose;
-            this.txbTratamiento.Location = new System.Drawing.Point(546, 337);
+            this.txbTratamiento.Location = new System.Drawing.Point(546, 296);
             this.txbTratamiento.Name = "txbTratamiento";
             this.txbTratamiento.Size = new System.Drawing.Size(78, 20);
             this.txbTratamiento.TabIndex = 20;
+            // 
+            // btnActualizar
+            // 
+            this.btnActualizar.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.btnActualizar.Location = new System.Drawing.Point(550, 391);
+            this.btnActualizar.Name = "btnActualizar";
+            this.btnActualizar.Size = new System.Drawing.Size(75, 33);
+            this.btnActualizar.TabIndex = 21;
+            this.btnActualizar.Text = "Actualizar";
+            this.btnActualizar.UseVisualStyleBackColor = true;
+            this.btnActualizar.Click += new System.EventHandler(this.btnActualizar_Click);
             // 
             // Form1
             // 
@@ -252,6 +265,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PapayaWhip;
             this.ClientSize = new System.Drawing.Size(656, 604);
+            this.Controls.Add(this.btnActualizar);
             this.Controls.Add(this.txbTratamiento);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.txbTipoSangre);
@@ -303,6 +317,7 @@
         private System.Windows.Forms.TextBox txbTipoSangre;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TextBox txbTratamiento;
+        private System.Windows.Forms.Button btnActualizar;
     }
 }
 

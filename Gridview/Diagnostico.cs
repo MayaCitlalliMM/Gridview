@@ -9,8 +9,8 @@ namespace Gridview
     internal class Diagnostico:Animales
     {
         public Diagnostico() { }
-        public Diagnostico(string tipoAnimal, string nombre, int code, string enfermedad, string tratamiento, string tipoSangre)
-            :base(tipoAnimal, nombre, code)
+        public Diagnostico(string tipoAnimal, string nombre, string identificacionAnimal, string enfermedad, string tratamiento, string tipoSangre)
+            :base(tipoAnimal, nombre, identificacionAnimal)
         {
             Enfermedad = enfermedad;
             Tratamiento = tratamiento;
