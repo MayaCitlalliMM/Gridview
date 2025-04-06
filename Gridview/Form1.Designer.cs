@@ -108,7 +108,7 @@
             // btnLimpiar
             // 
             this.btnLimpiar.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.btnLimpiar.Location = new System.Drawing.Point(440, 11);
+            this.btnLimpiar.Location = new System.Drawing.Point(461, 11);
             this.btnLimpiar.Margin = new System.Windows.Forms.Padding(2);
             this.btnLimpiar.Name = "btnLimpiar";
             this.btnLimpiar.Size = new System.Drawing.Size(164, 24);
